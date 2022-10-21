@@ -1,0 +1,319 @@
+ Plot()
+ {
+  Outlier_Model("Charcoal",Exp(1,-10,0),U(0,3),"t");
+  Outlier_Model("General",T(5),U(0,4),"t");
+  Sequence()
+  {
+   Boundary("Start WT")
+   {
+    Start("Start of Start");
+    Transition("Transition");
+    End("End of Start");
+   };
+   KDE_Plot("WT")
+   {
+    Phase("Turpin")
+    {
+     Phase("H.1")
+     {
+      R_Date("AA 107648", 905, 19)
+      {
+       Outlier("Charcoal", 1);
+      };
+      Phase("Outer Wall")
+      {
+       R_Date("AA 107647", 815, 23)
+       {
+        Outlier("Charcoal", 1);
+       };
+       R_Date("AA 107650", 881, 19)
+       {
+        Outlier("Charcoal", 1);
+       };
+      };
+      R_Date("AA 107649", 859, 24)
+      {
+       Outlier("Charcoal", 1);
+      };
+      R_Date("AA 107651", 851, 44)
+      {
+       Outlier("Charcoal", 1);
+      };
+     };
+     Phase("Turpin H.2")
+     {
+      R_Date("AA 107654", 805, 20)
+      {
+       Outlier("Charcoal", 1);
+      };
+      R_Date("AA 107652", 788, 19)
+      {
+       Outlier("Charcoal", 1);
+      };
+      R_Date("AA 107656", 692, 46)
+      {
+       Outlier("Charcoal", 1);
+      };
+      R_Date("AA 107653", 855, 63)
+      {
+       Outlier("Charcoal", 1);
+      };
+     };
+     R_Date("Turpin H.3 - UCI 153694", 785, 20)
+     {
+      Outlier("Charcoal", 1);
+     };
+     First("First Turpin");
+    };
+    Phase("Schomaker H.1")
+    {
+     R_Date("Beta 17994", 516, 60)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta 31965", 482, 50)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("AA 98028", 657, 35)
+     {
+      Outlier("General", 0.05);
+     };
+     R_Date("AA 98026", 850, 34)
+     {
+      Outlier("General", 0.05);
+     };
+     First("First Schomaker");
+    };
+    Phase("Horseshoe Johnson")
+    {
+     R_Date("AA 98050", 812, 36)
+     {
+      Outlier("General", 0.05);
+     };
+     R_Date("AA 98049", 792, 36)
+     {
+      Outlier("Charcoal", 1);
+     };
+     First("First HJ");
+    };
+    Phase("Hahn")
+    {
+     R_Date("Hahn - ???", 641, 38)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Hahn - Beta 259695", 590, 40)
+     {
+      Outlier("Charcoal", 1);
+     };
+     First("First Hahn");
+    };
+    R_Date("Sunwatch - OWU 448", 555, 100)
+    {
+     Outlier("Charcoal", 1);
+    };
+    Phase("Arrasmith")
+    {
+     R_Date("Beta-192027", 760, 40)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192025", 750, 40)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192023", 720, 40)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192028", 670, 50)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192030", 670, 50)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192024", 660, 50)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192033", 660, 50)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192026", 660, 40)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("UGa-5625", 650, 60)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192029", 630, 70)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192034", 630, 60)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192031", 580, 60)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-192032", 460, 60)
+     {
+      Outlier("Charcoal", 1);
+     };
+     First("First Arrasmith");
+    };
+    Phase("Shippingport")
+    {
+     R_Date("Beta 258129", 670, 50)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta 258135", 520, 40)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta 215968", 700, 50)
+     {
+      Outlier("Charcoal", 1);
+     };
+     First("First Shippingport");
+    };
+    Phase("Chestnut Lake")
+    {
+     R_Date("Beta-177944", 530, 50)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Beta-177945", 620, 50)
+     {
+      Outlier("Charcoal", 1);
+     };
+     First("First Chestnut Lake");
+    };
+    Phase("Burcham")
+    {
+     R_Date("ISGS-1647", 530, 70)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("ISGS-1648", 650, 70)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("ISGS-1651", 640, 70)
+     {
+      Outlier("Charcoal", 1);
+     };
+     First("First Burcham");
+    };
+    Phase("Mercer Village")
+    {
+     R_Date("ISGS-A2992", 775, 20)
+     {
+      Outlier("General", .05);
+     };
+     R_Date("ISGS-A2993", 780, 20)
+     {
+      Outlier("General", .05);
+     };
+     First("First Mercer Village");
+    };
+    R_Date("Steam, UGa-3574", 490, 85)
+    {
+     Outlier("Charcoal", 1);
+    };
+    R_Date("Morris, I-480", 475, 90)
+    {
+     Outlier("Charcoal", 1);
+    };
+    R_Date("Roach, I-479", 410, 85)
+    {
+     Outlier("Charcoal", 1);
+    };
+    R_Date("Rowlandtown, Beta-201911", 690, 40)
+    {
+     Outlier("Charcoal", 1);
+    };
+    R_Date("Marshall, ISGS-1507", 790, 70)
+    {
+     Outlier("Charcoal", 1);
+    };
+    Phase("Guard")
+    {
+     R_Date("Guard H.4 - UCI 164702", 990, 20)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Guard H.2 - AA 99946", 928, 39)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("Guard H.3 - AA 99947", 873, 39)
+     {
+      Outlier("Charcoal", 1);
+     };
+     First("First Guard");
+    };
+    Phase("Angel")
+    {
+     R_Date("Beta-284697", 550, 40)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("DIC-2358", 630, 45)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("M-5", 580, 100)
+     {
+      Outlier("Charcoal", 1);
+     };
+     R_Date("M-7", 760, 100)
+     {
+      Outlier("Charcoal", 1);
+     };
+     First("First Angel");
+    };
+    R_Date("Murphy, Beta-119391", 650, 40)
+    {
+     Outlier("General", .05);
+    };
+    R_Date("Kuester Site, UGAMS-8452", 900, 25)
+    {
+     Outlier("General", .05);
+    };
+    Interval("Wall Trench Houses");
+    Date("Wall Trench Houses");
+   };
+   Boundary("End WT");
+  };
+  Order("WTS Order")
+  {
+   Date("=First Shippingport");
+   Date("=First Arrasmith");
+   Date("=First Hahn");
+   Date("=First HJ");
+   Date("=First Guard");
+   Date("=First Turpin");
+   Date("=First Schomaker");
+   Date("=Sunwatch - OWU 448");
+   Date("=First Mercer Village");
+   Date("=First Angel");
+   Date("=First Burcham");
+   Date("=First Chestnut Lake");
+   Date("=Morris, I-480");
+   Date("=Roach, I-479");
+   Date("=Marshall, ISGS-1507");
+   Date("=Rowlandtown, Beta-201911");
+   Date("=Steam, UGa-3574");
+   Date("=Kuester Site, UGAMS-8452");
+   Date("=Murphy, Beta-119391");
+  };
+ };
